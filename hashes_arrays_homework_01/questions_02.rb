@@ -75,5 +75,5 @@ users ['Erik'][:pets].push(  {
     :species => "dog"
   } )
 
-users['Euan']
+users['Euan'] = {}
 p users
