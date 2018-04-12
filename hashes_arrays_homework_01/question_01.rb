@@ -26,6 +26,9 @@ p stops.length()
 #How many ways can we return "Falkirk High" from the array?
 p stops[2]
 p stops.at(2)
+p stops[-5]
+p stops.at(-5)
+
 
 #Reverse the positions of the stops in the array
 p stops.reverse
