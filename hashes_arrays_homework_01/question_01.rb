@@ -32,6 +32,7 @@ p stops.at(-5)
 
 #Reverse the positions of the stops in the array
 p stops.reverse
+p stops.reverse! # changes the orignal rather than duplicating the changing
 
 #Print out all the stops using a for loop
 for stations in stops

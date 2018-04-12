@@ -59,12 +59,21 @@ p users ['Erik'][:home_town]
 p users ['Erik'][:lottery_numbers]
 p users ['Avril'][:pets][0][:species]
 p users ['Erik'][:lottery_numbers][2]
+p users ["Erik"][:lottery_numbers].sort.first
 
 for number in users['Avril'][:lottery_numbers]
   if number % 2 !=1
     p number
   end
 end
+
+# result = []
+# for number in users['Avril'][:lottery_numbers]
+#   if number % 2 == 0
+#   end
+#     result.push(number)
+#   end
+#   p result
 
 p users ['Erik'][:lottery_numbers].push(7)
 
@@ -74,6 +83,9 @@ users ['Erik'][:pets].push(  {
     :name => "Fluffy",
     :species => "dog"
   } )
+
+# dog = {:name => "Fluffy", :species => "dog"}
+# users['Erik'][:pets].push(dog)
 
 users['Euan'] = {}
 p users
